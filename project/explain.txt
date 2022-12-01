@@ -1,6 +1,3 @@
-link:
-https://finish-all-game.herokuapp.com/
-
 First screen of login and opening a new user.
 When the user is not registered, he has to log in through a new user, and if the user is registered, he logs in through the normal login.
 The server saves all the users' data in a TXT file and of course it saves the password as a link so that no one can access the password
