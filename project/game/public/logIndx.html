@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Quotes</title>
+
+</head>
+
+<body>
+
+  <div id="yael">
+    
+    <main class="main">
+        <div class="clockbox">
+            <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+                <g id="face">
+                    <circle class="circle" cx="300" cy="300" r="253.9"/>
+                    <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                    <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+                </g>
+                <g id="hour">
+                    <path class="hour-arm" d="M300.5 298V142"/>
+                    <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                </g>
+                <g id="minute">
+                    <path class="minute-arm" d="M300.5 298V67"/>
+                    <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                </g>
+                <g id="second">
+                    <path class="second-arm" d="M300.5 350V55"/>
+                    <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+                </g>
+            </svg>
+        </div><!-- .clockbox -->
+    </main>
+    <div class="container">
+      <!-- <div class="imgDiv"><img id="image" src="i1.jpg"></div> -->
+      <div>
+          <blockquote class="quote-box">          
+              <!-- <p id="quote-text">0</p> -->
+              <h1 id="quote-text1">1</h1>
+              <h1 id="quote-text2">2</h1>
+              
+          </blockquote>
+      </div> 
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <!-- <span class="close">&times;</span> -->
+          <div class="body1">
+            <div class="face1">
+                <div class="right-eye">
+                 <div class="right-eye-ball"></div>
+                </div>
+            <div class="left-eye">
+                <div class="left-eye-ball"></div>
+            </div>
+            <div class="mouth1">
+                <div class="tongue"></div>
+            </div>
+            
+            </div>
+         
+            
+         </div>
+          
+        </div>
+        <div class="title-word title-word-1"><h2>Such a loser!!!!!!!</h2></div>
+        
+      </div>
+      
+  </div>
+  <div></div> 
+  <div>
+    <p>points:</p>
+    <p id="poit">0</p></div> 
+  </div>
+
+
+    <div class="flex-container">
+        <button onclick=myFunction(this.id) id="one" class="button button-5" >
+            <h1 id="lineOne">1</h1>
+            <h1 id="lineTwo">1</h1>
+            </button>
+        <button onclick=myFunction(this.id) id="two" class="button button-5" >
+            <h1 id="lineThree">2</h1>
+            <h1 id="lineFour">2</h1>
+        </button>
+        <button onclick=myFunction(this.id) id="three" class="button button-5"  >
+            <h1 id="lineFive">3</h1>
+            <h1 id="lineSix">3</h1>
+        </button>  
+       
+    </div>
+    <div class="exitOver">
+        <button onclick=exit() class="buttonExit button-2">
+            <h1 >exit</h1>
+        </button>
+    </div>
+
+    
+</body>
+
+
+<div id="openningWindow" class="openWindowInTheStart">
+  <div class="slideshow-container">
+  
+  <div class="mySlides">
+  <div><h3 >Welcome to our</h3></div>
+    <div class="colorsAll"> <span style="color:#ff0000">C</span>
+      <span style="color:#0000cc">O</span>
+      <span style="color:#00ff00">L</span>
+      <span style="color:#ffff00">O</span>
+      <span style="color:#ff6600">R</span>
+      <span style="color:#66ffff">S</span></div>
+     
+    <div><h3 >game!</h3></div>
+  
+  </div>
+  
+  <div class="mySlides">
+    <h1>In this game two colors painted in different colors will appear every 5 seconds.</h1>
+    <h1> You have to choose the color that the words are painted.</h1>
+    <h1>You must accumulate points, if you did not choose, you will lose a point, and if you chose incorrectly, the counting of points will start from the beginning.</h1>
+    
+  </div>
+  
+  <div class="mySlides">
+    <h1>see you as winners or losers...</h1>
+   
+    <h1></h1>
+  <h1><button onclick=functioClose() id="startGame" class="startBut">start</button></h1>
+   
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+</div class="gameOver">
+<div id="myMod" class="endBox">
+  <h1 class="title-word title-word-1">game over</h1>
+  <h2 class="yourPoitsAre" >your poits are:</h2>
+  <h1 id="endPoints"class="title-word title-word-1"> </h1>
+  <h2 class="yourPoitsAre" >your max points until now not include (:</h2>
+  <h1 id="maxPoint"class="title-word title-word-1"> </h1>
+  
+  
+</div>
+
+<script src="script.js">
+</script>
+
+</html>

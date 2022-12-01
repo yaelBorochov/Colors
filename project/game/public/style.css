@@ -1,0 +1,677 @@
+
+  .boxId{
+  padding: 80px 0;
+  font-size: 25px;
+  font-weight: bold;
+  }
+  
+  input[type=text], input[type=password], input[type=email] {
+      width: 61%;
+      padding: 12px 20px;
+      margin: 6px 0;
+      display: inline-block;
+      border: 2px solid rgb(255, 220, 220);
+      box-sizing:border-box;
+      color: rgb(209, 47, 47);
+  }
+  
+  .kk
+  {
+    background-color: rgb(248, 80, 80);
+    border: none;
+    color: white;
+    padding: 15px 43px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    margin: 4px 4px;
+    cursor: pointer;
+    width: 10%;
+  }
+
+  .nn>div
+  {
+      text-align: center;
+      margin-top: 3%;
+      font-size: 30px;
+      /* color: white; */
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      width:98%;
+  }
+  .labelDiv>div
+  {
+    -ms-flex: 1;  /* IE 10 */  
+    flex: 1;
+    margin-left: 2%;
+    
+  }
+  .textLoc
+  {
+    text-align:center;
+  }
+  .labelLoc
+  {
+    text-align: right;
+  }
+ 
+  .boxDec
+  {
+      width: 100px;
+      text-decoration:none;
+      color:  rgb(248, 80, 80);
+  font-size: 24px;
+  align-items: center;
+  letter-spacing: 1px;
+  font-family: 'Inter UI', sans-serif;
+  
+  }
+  .links
+  {
+      text-decoration:none;
+      color: rgb(253, 60, 60);
+  font-weight: bolder ;
+  font-size: 80px;
+  align-items: center;
+  animation-duration: 3s;
+  letter-spacing: 1.5px;
+  font-family: 'Inter UI', sans-serif;
+  transform: rotatex(180deg) translatey(15px);
+  }
+
+  a:hover
+  {
+      color: rgb(248, 111, 87);
+      font-size:88px;
+      transition: all 500ms;
+      font-size-adjust: 20px;
+  }
+  
+  .newUser
+        {
+          /* text-decoration:none; */
+          text-align: center;
+          /* color: rgb(216, 50, 50); */
+          color: rgb(248, 74, 74);
+          font-weight: bolder;
+          font-size: 60px;
+          /* align-items: center; */
+          letter-spacing: 1px;
+          font-family: 'Inter UI', sans-serif;
+        }
+  
+  .mylink
+  {
+    text-decoration:none;
+      color: rgb(243, 43, 43);
+  font-weight: bolder;
+  font-size: 25px; 
+  letter-spacing: 0.6px;
+   font-family: 'Inter UI', sans-serif;
+   
+  }
+  .yaelbc{
+    margin-top: -3%;
+  }
+  .decorate
+  {
+    text-decoration:none;
+      color: rgb(243, 43, 43);
+  font-weight: bolder;
+  font-size: 25px; 
+  letter-spacing: 0.6px;
+   font-family: 'Inter UI', sans-serif;
+  }
+ 
+.title-word {
+animation: color-animation 0.7s linear infinite;
+}
+
+.title-word-1 {
+--color-1: #ff0000;
+--color-2: #0a119c;
+--color-3: #51ff00;
+}
+
+@keyframes color-animation {
+0%    {color: var(--color-1)}
+32%   {color: var(--color-1)}
+33%   {color: var(--color-2)}
+65%   {color: var(--color-2)}
+66%   {color: var(--color-3)}
+99%   {color: var(--color-3)}
+100%  {color: var(--color-1)}
+}
+
+.endBox> h1
+{
+  text-align: center;
+  font-size: 80px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yourPoitsAre{
+text-align: center;
+font-size: 30px;
+}
+
+.slideshow-container {
+height:90%;
+position: relative;
+background: #ffffff;
+}
+
+.startBut{
+background-color: #ff3333;
+border: none;
+color: white;
+padding: 32px 64px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 32px;
+margin: 8px 4px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.colorsAll{
+font-size: 350%;
+ font-weight: bold;
+}
+
+.mySlides {
+display: none;
+padding: 80px;
+text-align: center;
+}
+
+.mySlides>div {
+text-align: center;
+  font-size: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width:98%;
+}
+
+.mySlides>h1 {
+text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width:98%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -30px;
+padding: 16px;
+color: #888;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+position: absolute;
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ff3333;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+background-color: #ffffff;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+  *
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.body1
+{
+width: 100%;
+min-height: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 30%;
+}
+
+.face1
+{
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background: #ffee00;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.right-eye
+{
+display: flex;
+position: absolute;
+width:50px;
+height: 50px;
+background: #fff;
+border: 5px solid #000;
+border-radius: 50%;
+justify-content: center;
+align-items: center;
+margin-top: -20px;
+margin-right: -80px;
+}
+
+.right-eye-ball
+{
+display: flex;
+position: absolute;
+width: 30px;
+height: 30px;
+background: #000;
+display: flex;
+border-radius: 50%;
+margin-bottom: -10px;
+margin-right: -10px;
+animation: myfirst 1s 2;
+}
+
+.left-eye
+{
+display: flex;
+position: absolute;
+width:50px;
+height: 50px;
+background: #fff;
+border: 5px solid #000;
+border-radius: 50%;
+justify-content: center;
+align-items: center;
+margin-top: -20px;
+margin-left: -80px;
+}
+
+.left-eye-ball
+{
+display: flex;
+position: absolute;
+width: 30px;
+height: 30px;
+background: #000;
+display: flex;
+border-radius: 50%;
+margin-bottom: -10px;
+margin-right: -10px;
+animation: myfirst 1s 2;
+}
+
+.mouth1{
+width: 80px;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #000;
+border-radius: 50%;
+margin-bottom: -120px;
+position: absolute;
+}
+
+.tongue{
+width: 80px;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #ffee00;
+border-radius: 50%;
+margin-bottom: -18px;
+position: absolute;
+animation: myfirst2 0.8s 2;
+}
+
+@keyframes myfirst {
+0% {background: red; left: 0px; top: 0px;}
+0%  {background: green; left: 10px; top: 0px;}
+0%  {background: rgb(20, 2, 2); left: 0px; top: 0px;}
+}
+
+@keyframes myfirst2 {
+80%  {background: #000300ee; }
+0%  {background: #ffee00; }
+0%  {background: #000300ee; }
+}
+
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 10%; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+}
+
+.endBox {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 10%; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: white; /* Black w/ opacity */
+}
+
+.openWindowInTheStart{
+position: fixed; /* Stay in place */
+padding-top: 2%; /* Location of the box */
+margin-left: 5%;
+align-self: center;
+left: 0;
+top: 0;
+width: 90%; /* Full width */
+height: 100%; /* Full height */
+}
+
+.modal-content {
+background-color: #fefefece;
+margin: auto;
+padding: 20px;
+width: 45%;
+height:80%
+}
+
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+  * {
+margin: 0;
+padding: 0;
+font-family: montserrat, sans-serif;
+box-sizing: border-box;
+}
+
+.main {
+  margin-top: -12%;
+}
+
+#yael div {
+  -ms-flex: 1;  /* IE 10 */  
+  flex: 1;
+}
+
+#yael {
+  width: 100%;
+  height: 300px;
+  display: flex;
+width: 100%;
+text-align: center;
+font-size: 30px;
+margin-top: 3%; 
+line-height:90px;
+}
+
+.clockbox,
+#clock {
+  width: 60%;
+}
+
+.circle {
+  fill: none;
+  stroke: #000;
+  stroke-width: 9;
+  stroke-miterlimit: 10;
+}
+
+.mid-circle {
+  fill: #000;
+}
+.hour-marks {
+  fill: none;
+  stroke: #000;
+  stroke-width: 9;
+  stroke-miterlimit: 10;
+}
+
+.hour-arm {
+  fill: none;
+  stroke: #000;
+  stroke-width: 17;
+  stroke-miterlimit: 10;
+}
+
+.minute-arm {
+  fill: none;
+  stroke: #000;
+  stroke-width: 11;
+  stroke-miterlimit: 10;
+}
+
+.second-arm {
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+  fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+  transform-origin: 300px 300px;
+  /* transition: transform .5s ease-in-out; */
+}
+
+.butExit {
+width: 10%;
+height:50px;
+}
+
+.button-container {
+display: flex;
+width: 20%;
+height:20%;
+min-height: 100vh;
+justify-content: center;
+align-items: center;
+}
+
+.button {
+appearance: none;
+background: none;
+border: none;
+outline: none;
+line-height: 60px;
+width: 25%;
+height:20%;
+padding: 20px 40px;
+border-radius: 8px;
+color: #212121;
+font-size: 15px;
+font-weight: 400;
+margin: 0 15px;
+cursor: pointer;
+transition: 0.4s;
+}
+
+.buttonExit {
+appearance: none;
+background: none;
+border: none;
+outline: none;
+width: 10%;
+padding: 20px 15px;
+border-radius: 8px;
+font-size: 10px;
+transition: 0.4s;
+}
+
+.button-2 {
+color: #ff0000;
+border: 3px solid #fe0a0a;
+background-image: linear-gradient(to right, transparent 50%, #fe0a0a 50%);
+background-size: 200%;
+background-position: 0%;
+}
+
+.button-2:hover {
+color: #FFF;
+background-position: 100%;
+}
+
+
+.button-5 {
+position: relative;
+}
+
+.button-5:after {
+content: '';
+position: absolute;
+width: 0;
+height: 0;
+bottom: 0;
+right: 0;
+border-bottom: 3px solid #212121;
+border-right: 3px solid #212121;
+transition: all 0.4s, opacity 0.1s 0.4s;
+opacity: 0;
+}
+
+.button-5:before {
+content: '';
+position: absolute;
+width: 0;
+height: 0;
+top: 0;
+left: 0;
+border-top: 3px solid #ff0000;
+border-left: 3px solid #ff0000;
+border: 3px solid #ff0000;
+transition: all 0.4s, opacity 0.1s 0.4s;
+opacity: 0;
+
+}
+.flex-container {
+  text-align: center;
+display: flex;
+margin-top: 3%;
+margin-left: 10%;
+margin-right: 10%;
+}
+
+.flex-container > button {
+width: 100%;
+text-align: center;
+}
+
+.quote-box{
+width: 100%;
+text-align: center;
+font-size: 25px;
+margin-top: 3%; 
+line-height:90px;
+}
+
+.exitOver{
+  width: 100%;
+text-align: center;
+font-size: 50px;
+margin-top: 3%; 
+}
+
+.button-5:hover:after, .button-5:hover:before {
+width: calc(100% + 15px);
+height: calc(100% + 15px);
+transition: all 0.4s, opacity 0.1s;
+opacity: 1;
+}
+
+.modal>div
+{
+text-align: center;
+  font-size: 30px; 
+  padding: 10px;
+  margin-bottom: -15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}  
